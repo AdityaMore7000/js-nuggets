@@ -52,4 +52,4 @@ const items = [
 
 const categories = [...new Set(items.map(item => item.type))]
 
-console.log(categories)
+console.log(categories) 
