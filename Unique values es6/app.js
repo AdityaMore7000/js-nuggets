@@ -10,44 +10,46 @@
 const items = [
     {
         name:"Apple",
-        type:"Fruit"
+        type:"Breakfast"
     },
     {
         name:"Orange",
-        type:"Fruit"
+        type:"Breakfast"
     },
     {
         name:"Carrot",
-        type:"Vegetable"
+        type:"Lunch"
     },
     {
         name:"Tomato",
-        type:"Vegetable"
+        type:"Lunch"
     },
     {
         name:"Cucumber",
-        type:"Vegetable"
+        type:"Lunch"
     },
     {
         name:"Banana",
-        type:"Fruit"
+        type:"Breakfast"
     },
     {
         name:"Pineapple",
-        type:"Fruit"
+        type:"Breakfast"
     },
     {
         name:"Strawberry",
-        type:"Fruit"
+        type:"Breakfast"
     },
     {
         name:"Lettuce",
-        type:"Vegetable"
+        type:"Lunch"
     },
     {
         name:"Blueberry",
-        type:"Fruit"
+        type:"Breakfast"
     }
 ]
 
-console.log(items[0].name)
+const categories = [...new Set(items.map(item => item.type))]
+
+console.log(categories)
