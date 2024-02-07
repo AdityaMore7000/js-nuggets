@@ -6,7 +6,7 @@
  */
 
 /**
- * @param {Person[]} people
+ * @type {Person[]} 
  */
 
 const people = [
